@@ -38,7 +38,6 @@ class A {
                     i=j;
                 }
             }
-            if(a[])
             for(int m=0;m<100;m++)
             {
                 System.out.println(m+"->"+freq[m]);
