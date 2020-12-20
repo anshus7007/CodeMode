@@ -76,6 +76,19 @@ class LinkedList {
 
             }
         }
+    private   void printList()
+    {
+        printList(head);
+    }
+
+    public  void printList(Node head)
+    {
+        while(head != null)
+        {
+            System.out.print(head.data + " ");
+            head = head.next;
+        }
+    }
     public int size(Node head)
     {
         int c=0;
@@ -90,12 +103,79 @@ class LinkedList {
     public Node getNodeAt(Node head,int i)
     {
         Node temp=head;
-        for(int j=1;j<i;j++)
+        for(int j=0;j<i;j++)
         {
             temp=temp.next;
         }
         return temp;
     }
+    public void quickSort()
+
+    {
+        quickSort(head);
+        printList(head);
+    }
+      void quickSort(Node node)
+    {
+
+        sort(node,0,size(node)-1);
+    }
+    public  void sort(Node h,int lo,int hi)
+    {
+        if(lo>=hi)
+        {
+            return ;
+        }
+        int mid=(lo+hi)/2;
+        Node pivot=getNodeAt(h,mid);
+        int left=lo,right=hi;
+
+        while(left<=right)
+        {
+            // int ll=getNodeAt(h,left).data;
+            //            // int rr=getNodeAt(h,right).data;
+            while(getNodeAt(h,left).data<pivot.data)
+            {
+                left++;
+                // ll=getNodeAt(h,left).data;
+            }
+            while(getNodeAt(h,right).data>pivot.data)
+            {
+                right--;
+                // rr=getNodeAt(h,right).data;
+            }
+            if(left<=right)
+            {
+                int temp=getNodeAt(h,left).data;
+                getNodeAt(h,left).data=getNodeAt(h,right).data;
+                getNodeAt(h,right).data=temp;
+                left++;
+                right--;
+            }
+        }
+        sort(h,lo,right);
+        sort(h,left,hi);
+    }
+//    public static int size(Node h)
+//    {
+//        int c=0;
+//        while(h!=null)
+//        {
+//            c++;
+//            h=h.next;
+//
+//        }
+//        return c;
+//    }
+//    public static Node getNodeAt(Node h,int i)
+//    {
+//        for(int j=0;j<i;j++)
+//        {
+//            h=h.next;
+//        }
+//        return h;
+//    }
+
 
 
 
