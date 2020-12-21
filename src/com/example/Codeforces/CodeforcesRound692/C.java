@@ -1,11 +1,16 @@
 package com.example.Codeforces.CodeforcesRound692;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class C {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t=sc.nextInt();
+        HashMap<Integer,Integer> map = new HashMap<>();
+        Set<Integer> list1= map.keySet();
+        List<Integer> ll = new ArrayList<>(list1);
+        Collections.sort(ll);
+
         while (t-->0)
         {
             int n=sc.nextInt();
