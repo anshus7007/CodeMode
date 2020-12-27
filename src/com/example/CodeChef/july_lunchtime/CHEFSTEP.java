@@ -2,7 +2,7 @@ package com.example.CodeChef.july_lunchtime;
 
 import java.util.Scanner;
 
-public class CHEFSTEP {
+ class CHEFSTEP {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t=sc.nextInt();
