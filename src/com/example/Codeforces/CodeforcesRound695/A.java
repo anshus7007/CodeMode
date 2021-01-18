@@ -8,6 +8,20 @@ public class A {
         int t=sc.nextInt();
         while (t-->0)
         {
+            long n=sc.nextLong();
+            long times=n%10;
+            long tot=n/10;
+            StringBuilder s= new StringBuilder();
+            int j=9;
+            for(long i=0;i<tot;i++)
+                s.append("9876543210");
+            for( int i=0;i<times;i++)
+            {
+                s.append(j);
+                j--;
+
+            }
+            System.out.println(s);
 
         }
     }
