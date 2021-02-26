@@ -2,7 +2,7 @@ package com.example.CodeChef.cp2020.nov_lunchtime;
 
 import java.util.*;
 
-public class Gasoline {
+public class    Gasoline {
     static class Pair
     {
         long f;
