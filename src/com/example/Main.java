@@ -1,47 +1,89 @@
 package com.example;
 
-import com.sun.corba.se.impl.orbutil.graph.Graph;
-import com.sun.xml.internal.ws.encoding.xml.XMLMessage;
-
-import java.io.DataInputStream;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.Reader;
-import java.util.*;
-class Random
+class GFG
 {
-    int seed;int mult;int inc;int mod;
-    Random(int seed,int mult,int inc,int mod)
+
+    static void findWaitingTime(int processes[], int n,
+                                int bt[], int wt[], int quantum)
     {
-        this.seed=seed;
-        this.mult=mult;
-        this.inc=inc;
-        this.mod=mod;
+        int rem_bt[] = new int[n];
+        for (int i = 0 ; i < n ; i++)
+            rem_bt[i] =  bt[i];
 
-    }
-    int rand()
-    {
-        seed=((mult*seed+inc)%mod);
-        return seed;
-    }
+        int t = 0;
 
-
-}
-class Main
-{
-    public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        int n=sc.nextInt();
-        int seed=sc.nextInt();
-        int mult=sc.nextInt();
-        int inc=sc.nextInt();
-        int mod=sc.nextInt();
-        Random r=new Random(seed, mult,inc,mod);
-        while (n-->0)
+        while(true)
         {
-            int ans=r.rand();
-            System.out.println(ans);
+            boolean done = true;
+
+            for (int i = 0 ; i < n; i++)
+            {
+                if (rem_bt[i] > 0)
+                {
+                    done = false;
+                    if (rem_bt[i] > quantum)
+                    {
+                        t += quantum;
+                        rem_bt[i] -= quantum;
+                    }
+
+
+                    else
+                    {
+                        t = t + rem_bt[i];
+                        wt[i] = t - bt[i];
+                        rem_bt[i] = 0;
+                    }
+                }
+            }
+
+            if (done == true)
+                break;
+        }
+    }
+
+    static void findTurnAroundTime(int processes[], int n,
+                                   int bt[], int wt[], int tat[])
+    {
+
+        for (int i = 0; i < n ; i++)
+            tat[i] = bt[i] + wt[i];
+    }
+
+    static void findavgTime(int processes[], int n, int bt[],
+                            int quantum)
+    {
+        int wt[] = new int[n], tat[] = new int[n];
+        int total_wt = 0, total_tat = 0;
+
+        findWaitingTime(processes, n, bt, wt, quantum);
+
+        findTurnAroundTime(processes, n, bt, wt, tat);
+
+        System.out.println("Processes " + " Burst time " +
+                " Waiting time " + " Turn around time");
+        for (int i=0; i<n; i++)
+        {
+            total_wt = total_wt + wt[i];
+            total_tat = total_tat + tat[i];
+            System.out.println(" " + (i+1) + "\t\t" + bt[i] +"\t " +
+                    wt[i] +"\t\t " + tat[i]);
         }
 
+        System.out.println("Average waiting time = " +
+                (float)total_wt / (float)n);
+        System.out.println("Average turn around time = " +
+                (float)total_tat / (float)n);
+    }
+
+    public static void main(String[] args)
+    {
+        int processes[] = { 1, 2, 3};
+        int n = processes.length;
+
+        int burst_time[] = {10, 5, 8};
+
+        int quantum = 1;
+        findavgTime(processes, n, burst_time, quantum);
     }
 }
