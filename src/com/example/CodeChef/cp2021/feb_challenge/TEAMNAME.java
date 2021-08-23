@@ -12,7 +12,7 @@ class TEAMNAME {
         while (t-->0)
         {
             int n=sc.nextInt();
-            String a[]= new String[n];
+            String[] a = new String[n];
             HashMap<String,Boolean> map= new HashMap<>();
             for(int i=0;i<n;i++)
             {

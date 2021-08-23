@@ -14,7 +14,7 @@ public class WIPL
         {
             int n=sc.nextInt();
             int k=sc.nextInt();
-            Integer a[]= new Integer[n];
+            Integer[] a = new Integer[n];
             int sum=0;
             for(int i=0;i<n;i++)
             {

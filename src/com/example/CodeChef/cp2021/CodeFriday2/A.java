@@ -10,8 +10,8 @@ public class A {
             while (t-- > 0) {
                 int n = sc.nextInt();
                 int k = sc.nextInt();
-                long h[] = new long[n];
-                long hnum[] = new long[k];
+                long[] h = new long[n];
+                long[] hnum = new long[k];
                 for (int i = 0; i < n; i++) {
                     h[i] = sc.nextLong();
                 }

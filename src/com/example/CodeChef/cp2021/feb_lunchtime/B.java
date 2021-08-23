@@ -9,7 +9,7 @@ class B {
            int t = sc.nextInt();
            while (t-- > 0) {
                String s=sc.next();
-               int a[]=new int[27];
+               int[] a =new int[27];
                for(int i=0;i<s.length();i++)
                {
                    a[s.charAt(i)-'a']++;

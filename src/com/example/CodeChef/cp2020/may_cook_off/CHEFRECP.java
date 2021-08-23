@@ -10,15 +10,15 @@ class CHEFRECP {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[] = new int[n];
-            int freq[] = new int[1001];
+            int[] a = new int[n];
+            int[] freq = new int[1001];
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextInt();
                 freq[a[i]]++;
 
             }
-            int uni[] = new int[1001];
+            int[] uni = new int[1001];
             int flag=0;
             for(int i=0;i<1001;i++)
             {
@@ -39,7 +39,7 @@ class CHEFRECP {
             }
             else
             {
-                int visited[]=new int[1001];
+                int[] visited =new int[1001];
                 visited[a[0]]=1;int i=0;
                 for( i=1;i<n;i++)
                 {

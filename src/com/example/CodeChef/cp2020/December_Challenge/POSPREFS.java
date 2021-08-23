@@ -12,7 +12,7 @@ public class POSPREFS {
             while (t-->0) {
                 int n = sc.nextInt();
                 int k = sc.nextInt();
-                int a[] = new int[n];
+                int[] a = new int[n];
                 if (n == k) {
                     for (int i = 1; i <= n; i++) {
                         System.out.print(i + " ");

@@ -12,7 +12,7 @@ public class CHPINTU {
         {
             int n=sc.nextInt();
             int m=sc.nextInt();
-            int type[] = new int[n];
+            int[] type = new int[n];
             for(int i=0;i<n;i++)
             {
                 type[i]=sc.nextInt();

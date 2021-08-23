@@ -11,7 +11,7 @@ import java.util.Scanner;
 
        int  n=sc.nextInt();
        int q=sc.nextInt();
-       int a[]=new int[n];
+       int[] a =new int[n];
        int zero=0;
        for(int i=0;i<n;i++)
        {
@@ -47,7 +47,7 @@ import java.util.Scanner;
 
        }
     }
-     static int upperBound(int list[], int target) {
+     static int upperBound(int[] list, int target) {
          if (list == null || list.length == 0)
              return -1;
 

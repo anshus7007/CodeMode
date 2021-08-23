@@ -11,7 +11,7 @@ class B {
         {
             int n=sc.nextInt();
             int k=sc.nextInt();
-            char a[] =sc.next().toCharArray();                int sum=0;
+            char[] a =sc.next().toCharArray();                int sum=0;
 
 
             for(int i=1;i<n;i++)

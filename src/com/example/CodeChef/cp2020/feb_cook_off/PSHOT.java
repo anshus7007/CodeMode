@@ -13,7 +13,7 @@ public class PSHOT {
                 int n=sc.nextInt();
                 String s = sc.next();
                 int A=0,B=0;
-                char str[] = s.toCharArray();int flag=0;
+                char[] str = s.toCharArray();int flag=0;
                 for(int i=0;i<str.length;i++)
                 {
 

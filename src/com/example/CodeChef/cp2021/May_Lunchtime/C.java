@@ -9,8 +9,8 @@ class C {
 
     // prefix[i] is going to store count
 // of primes till i (including i).
-    static int prefix[] = new int[MAX + 1];
-    static boolean prime[] = new boolean[MAX + 1];
+    static int[] prefix = new int[MAX + 1];
+    static boolean[] prime = new boolean[MAX + 1];
 
 
     static void buildPrefix() {

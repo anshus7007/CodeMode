@@ -12,7 +12,7 @@ public class B {
         while(t-->0)
         {
             int n=sc.nextInt();
-            int a[]=new int[n];
+            int[] a =new int[n];
             HashMap<Integer,Integer> map= new HashMap<>();
 
             for(int i=0;i<n;i++)

@@ -11,7 +11,7 @@ import java.util.*;
         // all entries it as true. A value in prime[i] will
         // finally be false if i is Not a prime, else true.
         int N=1000000;
-        boolean prime[] = new boolean[N+1];
+        boolean[] prime = new boolean[N+1];
         for(int i=0;i<N;i++)
             prime[i] = true;
 
@@ -25,7 +25,7 @@ import java.util.*;
                     prime[i] = false;
             }
         }
-        int res[]=new int[1000000+1];
+        int[] res =new int[1000000+1];
         for(int i=5;i<=N;i++)
         {
             if(prime[i]&&prime[i-2])

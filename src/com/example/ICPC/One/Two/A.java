@@ -1,63 +1,79 @@
 package com.example.ICPC.One.Two;
 
-import java.util.Scanner;
+import java.sql.Array;
+import java.util.*;
 
-public class A {
+class A {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+//        System.out.println(Math.min(1,1));
         int t=sc.nextInt();
         while(t-->0)
         {
-            String s=sc.next();
-            int c=0;
-
-
-            for(int i=0;i<s.length();i++)
+            int n=sc.nextInt();
+            int c=n;
+            int[] g =new int[n];
+            long sum=0;
+            for(int y=0;y<n;y++)
             {
-                char ch=s.charAt(i);
-                if(ch!='.') {
-                    c++;
-                }
-            }
-            int crrct[]=new int[c];
-            int initial[]=new int[c];
-            int final_p[]=new int[c];
-            int flag=0;
-            int k=0;
-            for(int i=0;i<s.length();i++)
-            {
-                char ch=s.charAt(i);
-                    if(ch!='.') {
-                        initial[k] = (i - Integer.parseInt(String.valueOf(ch)))<0?0:(i - Integer.parseInt(String.valueOf(ch)));
-
-                        final_p[k] = i + Integer.parseInt(String.valueOf(ch))>=s.length()?s.length()-1:i + Integer.parseInt(String.valueOf(ch));
-                        crrct[k] = i;
-                        k++;
-                        if (k == c)
-                            break;
-                    }
-
-
-            }
-
-            for(int i=0;i<c;i++)
-            {
-                for(int j=i+1;j<c;j++)
+                int k=sc.nextInt();
+                g[y]=k;
+                int z=k;
+                int[] a =new int[k];
+                int x=0;
+                for(int i=0;i<k;i++)
                 {
-                    if(final_p[i]-initial[j]>=0)
-                    {
-//                        if((crrct[j]-crrct[i]-1)%2==1&&((final_p[j]-crrct[j])+(crrct[i]-initial[i]))%2==1)
-//                        {
-                            flag=1;
-                            break;
-//                        }
-                    }
+                    a[i]=sc.nextInt();
                 }
+                ArrayList<Long> arr=new ArrayList<>();
+                int p=0;
+                for(int i=1;i<z;i++)
+                {
+                    if(a[i-1]>a[i])
+                    {
+
+                        sum=sum+(Math.min(p+1,k-(p+1)));
+//
+                        arr.add((long) (p+1));
+                        x=z-i;
+
+                        k=k-(p+1);
+
+                        p=0;
+
+                    }
+                    else
+                        p++;
+                }
+                arr.add((long) x);
+                Long[] f =new Long[arr.size()];
+                for(int i=0;i<arr.size();i++)
+                {
+                    f[i]=arr.get(i);
+                }
+                Arrays.sort(f);
+                long d=0;
+
+                for(int i=1;i<arr.size();i++)
+                {
+                    d=d+f[i]+f[i-1];
+                    f[i]=d;
+                }
+
+//
+                sum=sum+d;
             }
-            if(flag==1)
-                System.out.println("unsafe");
+            Arrays.sort(g);
+            long m=0;
+            for(int i=1;i<c;i++)
+            {
+                m=m+g[i]+g[i-1];
+                g[i]= (int) m;
+            }
+            if(c>1)
+            System.out.println(sum+m);
             else
-                System.out.println("safe");
+                System.out.println(sum);
         }
     }
 }

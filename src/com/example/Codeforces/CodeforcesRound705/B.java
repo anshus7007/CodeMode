@@ -11,7 +11,7 @@ public class B {
             int h=sc.nextInt();
             int m=sc.nextInt();
             String s=sc.next();
-            int a[]={0,1,2,-1,-1,5,-1,-1,8,-1};
+            int[] a ={0,1,2,-1,-1,5,-1,-1,8,-1};
             int  hr=Integer.parseInt(s.substring(0,2));
             int mm=Integer.parseInt(s.substring(3));
             int x=hr;

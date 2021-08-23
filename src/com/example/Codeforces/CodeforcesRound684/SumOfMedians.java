@@ -10,7 +10,7 @@ public class SumOfMedians {
         {
             int n=sc.nextInt();
             int k=sc.nextInt();
-            long a[] = new long[n*k];
+            long[] a = new long[n*k];
             for(int i=0;i<n*k;i++)
             {
                 a[i]=sc.nextLong();

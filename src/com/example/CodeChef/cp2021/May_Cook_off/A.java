@@ -5,7 +5,7 @@ import java.util.Scanner;
  class A {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        int a[][]=new int[1000][1000];
+        int[][] a =new int[1000][1000];
         a[0][0]=1;
         for(int i=0;i<1000;i++)
         {

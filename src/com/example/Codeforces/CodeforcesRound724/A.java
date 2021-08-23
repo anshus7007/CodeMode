@@ -9,7 +9,7 @@ public class A {
         while (t-->0)
         {
           int n=sc.nextInt();
-          int a[]=new int[n];
+          int[] a =new int[n];
           int max=Integer.MIN_VALUE;
           int flag=0,zero=0;
           for(int i=0;i<n;i++)
@@ -23,7 +23,7 @@ public class A {
           }
           if(flag==0) {
               System.out.println("Yes");
-              int b[] = new int[max+1];
+              int[] b = new int[max+1];
               System.out.println(max+1);
               for (int i = 0; i<max+1; i++) {
                     b[i]=i;

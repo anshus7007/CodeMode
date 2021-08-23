@@ -33,7 +33,7 @@ import java.util.Scanner;
 //            System.out.println(one+" "+zero);
 //            System.out.println(o+" "+z);
             if(one==o&&zero==z) {
-                int k[]=new int[n];
+                int[] k =new int[n];
                 Arrays.fill(k,-1);
                 int j=0;
                 int flag=1;boolean m=true;

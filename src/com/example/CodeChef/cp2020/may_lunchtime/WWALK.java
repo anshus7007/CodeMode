@@ -10,8 +10,8 @@ class WWALK {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[] = new int[n+1];
-            int b[] = new int[n+1];
+            int[] a = new int[n+1];
+            int[] b = new int[n+1];
             a[0]=0;
             b[0]=0;
             for(int i=1;i<n+1;i++)

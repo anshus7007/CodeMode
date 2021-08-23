@@ -68,7 +68,7 @@ class Main {
             int w1=sc.nextInt();
             int w2=sc.nextInt();
             int w3=sc.nextInt();
-            int a[] = new int[3];
+            int[] a = new int[3];
             a[0]=w1;
             a[1]=w2;
             a[2]=w3;

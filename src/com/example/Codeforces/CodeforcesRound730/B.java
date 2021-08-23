@@ -9,7 +9,7 @@ public class B {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[]=new int[n];
+            int[] a =new int[n];
             long sum=0;
 
             for(int i=0;i<n;i++)
@@ -24,7 +24,7 @@ public class B {
                 System.out.println(sum*(n-sum));
             }
             else {
-                long k= (long) (sum%n);
+                long k= sum%n;
                 System.out.println(k*(n-k));
 
             }

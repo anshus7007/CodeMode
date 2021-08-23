@@ -54,11 +54,6 @@ public class C {
         {
             b = b + a.charAt(i);
         }
-        if(a.equals(b))
-        {
-            return true;
-        }
-
-        return false;
+        return a.equals(b);
     }
 }

@@ -14,8 +14,8 @@ public class XORGM {
         while(t-->0)
         {
             int n =sc.nextInt();
-            int a[] = new int[n];
-            int b[] = new int[n];
+            int[] a = new int[n];
+            int[] b = new int[n];
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextInt();
@@ -40,7 +40,7 @@ public class XORGM {
                 xv=xv^a[i]^b[i];
             }
             int flag=0;
-            int ans[] = new int[n];
+            int[] ans = new int[n];
             for(int i=0;i<n;i++)
             {
                 int cv=a[i]^xv;

@@ -12,7 +12,7 @@ class B {
 
            int n=sc.nextInt();
            int x=sc.nextInt();
-           int a[]=new int[n];
+           int[] a =new int[n];
                Set<Integer> set=new HashSet<>();
            for(int i=0;i<n;i++)
            {

@@ -17,7 +17,7 @@ public class C {
                 System.out.println("-1");
             else
             {
-                int a[][]=new int[n][n];
+                int[][] a =new int[n][n];
                 for(int i=0;i<n;i++)
                 {
                     for(int j=0;j<n;j++)

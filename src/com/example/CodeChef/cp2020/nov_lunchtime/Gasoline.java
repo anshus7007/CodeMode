@@ -32,8 +32,8 @@ public class    Gasoline {
             {
                 arr.add(new Pair());
             }
-            long fuel[] = new long[n];
-            long cost[] = new long[n];
+            long[] fuel = new long[n];
+            long[] cost = new long[n];
             for(int i=0;i<n;i++)
             {
                 fuel[i]=sc.nextLong();

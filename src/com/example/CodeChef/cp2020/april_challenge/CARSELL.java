@@ -13,7 +13,7 @@ public class CARSELL {
         {
             Long mod =1000000007L;
             int n=sc.nextInt();
-            Long a[] = new Long[n];
+            Long[] a = new Long[n];
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextLong();

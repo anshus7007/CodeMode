@@ -12,7 +12,7 @@ public class C {
         while (t-->0)
         {
             int n=sc.nextInt();
-            float a[]= new float[n];
+            float[] a = new float[n];
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextFloat();
@@ -29,13 +29,13 @@ public class C {
                 int flag=0;
                 for(int i=n-1;i>=2;i--)
                 {
-                    a[i-1]=(float)(a[i]+a[i-1])/(float)2;
+                    a[i-1]= (a[i]+a[i-1]) /(float)2;
                     System.out.println(a[i-1]);
 
-                    a[i-1]=(float)(a[i-2]+a[i-1])/(float)2;
+                    a[i-1]= (a[i-2]+a[i-1]) /(float)2;
                     System.out.println(a[i-1]);
 
-                    a[i-1]=(float)(a[i]+a[i-1])/(float)2;
+                    a[i-1]= (a[i]+a[i-1]) /(float)2;
                     System.out.println(a[i-1]);
                     if(a[i]>a[i-1]&&a[i-1]>a[i-2])
                         continue;

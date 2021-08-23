@@ -10,7 +10,7 @@ public class B {
         int t=sc.nextInt();
         while (t-->0) {
             int n=sc.nextInt();
-            Integer a[]= new Integer[n];
+            Integer[] a = new Integer[n];
 
             for(int i=0;i<n;i++)
             {

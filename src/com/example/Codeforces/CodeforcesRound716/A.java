@@ -9,14 +9,14 @@ public class A {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[]=new int[n];
+            int[] a =new int[n];
             int flag=0;
-            double b[]=new double[n];
+            double[] b =new double[n];
 
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextInt();
-                b[i]=(double) a[i];
+                b[i]= a[i];
 
 
             }

@@ -10,7 +10,7 @@ class I {
             while (t-->0)
             {
                 int n=sc.nextInt();
-                int a[]=new int[n];
+                int[] a =new int[n];
                 int even=0,odd=0;
                 for(int i=0;i<n;i++)
                 {

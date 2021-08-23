@@ -10,7 +10,7 @@ public class A {
         factor = new int[MAX];
         factor[0] = 0;
         generatePrimeFactors();
-        int ans[]=new int[1999];
+        int[] ans =new int[1999];
         int j=0;
         for(int i=1;i<=1000000;i++)
         {

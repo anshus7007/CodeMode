@@ -10,7 +10,7 @@ public class A {
         {
             int n=sc.nextInt();
             long k=sc.nextLong();
-            int a[]= new int[n];
+            int[] a = new int[n];
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextInt();

@@ -15,7 +15,7 @@ public class Unique {
                 System.out.println("-1");
             else
             {
-                int a[] = new int[46];
+                int[] a = new int[46];
                 a[10]=19;
                 a[11]=29;
                 a[12]=39;

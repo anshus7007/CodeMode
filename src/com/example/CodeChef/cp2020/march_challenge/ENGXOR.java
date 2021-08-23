@@ -16,7 +16,7 @@ public class ENGXOR {
         {
             int n=sc.nextInt();
             int q=sc.nextInt();
-            int a[] = new int[n];
+            int[] a = new int[n];
             int even=0;
             int odd=0;
             for(int i=0;i<n;i++)

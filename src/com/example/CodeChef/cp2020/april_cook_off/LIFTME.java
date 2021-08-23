@@ -14,7 +14,7 @@ public class LIFTME {
             int n=sc.nextInt();
             int q=sc.nextInt();
 
-            int floor[] = new int[2*q+1];
+            int[] floor = new int[2*q+1];
             int i=1;
             while (q-->0)
             {

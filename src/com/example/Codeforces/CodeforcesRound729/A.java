@@ -9,7 +9,7 @@ public class A {
         while (t-- > 0)
         {
             int n=sc.nextInt();
-            int a[]=new int[2*n];
+            int[] a =new int[2*n];
             int x=0,y=0;
             for(int i=0;i<2*n;i++)
             {

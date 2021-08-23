@@ -9,7 +9,7 @@ public class B {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[]= new int[n];
+            int[] a = new int[n];
             int c0=0,c1=0,c2=0;
             for(int i=0;i<n;i++)
             {

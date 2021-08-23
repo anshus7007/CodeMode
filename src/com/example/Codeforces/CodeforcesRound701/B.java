@@ -9,12 +9,12 @@ public class B {
         int n=sc.nextInt();
         int q=sc.nextInt();
         int k=sc.nextInt();
-        int a[]= new int[n];
+        int[] a = new int[n];
         for(int i=0;i<n;i++)
         {
             a[i]=sc.nextInt();
         }
-        int b[]= new int[n];
+        int[] b = new int[n];
 
         for(int i=0;i<n;i++)
         {

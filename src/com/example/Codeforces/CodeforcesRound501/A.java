@@ -7,7 +7,7 @@ public class A {
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
         int m=sc.nextInt();
-        int a[]= new int[m+1];
+        int[] a = new int[m+1];
         for(int i=0;i<n;i++)
         {
             int x=sc.nextInt();

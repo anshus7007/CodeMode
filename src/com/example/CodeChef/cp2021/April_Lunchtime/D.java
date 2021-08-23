@@ -8,7 +8,7 @@ import java.util.Scanner;
         System.out.println((-10000002+1000000007)%1000000007);
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
-        long a[]= new long[n];
+        long[] a = new long[n];
         long sum=0;
         for(int i=0;i<n;i++)
         {

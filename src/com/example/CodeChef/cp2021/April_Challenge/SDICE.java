@@ -9,7 +9,7 @@ public class SDICE {
         while (t-->0)
         {
             long n=sc.nextLong();
-            int a[]={20,36,51,60};
+            int[] a ={20,36,51,60};
             if(n<=4)
             {
                 System.out.println(a[(int)n-1]);continue;

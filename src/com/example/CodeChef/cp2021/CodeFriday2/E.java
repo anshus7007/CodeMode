@@ -11,7 +11,7 @@ public class E {
             int t = sc.nextInt();
             while (t-- > 0) {
                 int n = sc.nextInt();
-                long a[] = new long[n];
+                long[] a = new long[n];
                 long min=Long.MAX_VALUE;
                 long max=Long.MIN_VALUE;
                 for (int i = 0; i < n; i++) {

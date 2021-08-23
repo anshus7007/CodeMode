@@ -70,7 +70,7 @@ class solve
             while (!stack.isEmpty()) {
                 s = s + stack.pop();
             }
-            return s.toString();
+            return s;
 
 
     }

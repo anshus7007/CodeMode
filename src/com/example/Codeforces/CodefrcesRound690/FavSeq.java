@@ -9,8 +9,8 @@ public class FavSeq {
         int t = sc.nextInt();
         while (t-- > 0) {
             int n = sc.nextInt();
-            int a[] = new int[n];
-            int b[] = new int[n];
+            int[] a = new int[n];
+            int[] b = new int[n];
 
             for (int i = 0; i < n; i++)
             {

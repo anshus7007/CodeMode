@@ -9,7 +9,7 @@ public class INCRDEC {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[] = new int[n];
+            int[] a = new int[n];
             boolean flag=true;
             boolean diff=true;
             HashMap<Integer,Integer> map= new HashMap<>();
@@ -63,8 +63,8 @@ public class INCRDEC {
                 continue;
             }
             int j=n-1;
-            int b[] = new int[n];
-            int c[] = new int[n];
+            int[] b = new int[n];
+            int[] c = new int[n];
            int m=0;int k=0;
             for(int i=0;i<n;i++)
             {

@@ -28,8 +28,8 @@ public class A {
             else {
                 long k = Math.abs(a - b);
                 long c = 0;
-                long z= (long) Math.round(a/(double)k);
-                c= (long) Math.abs(a-k*z);
+                long z= Math.round(a/(double)k);
+                c= Math.abs(a-k*z);
                 System.out.println(k + " " + c);
             }
         }

@@ -9,7 +9,7 @@ public class A {
         while(q-->0)
         {
             int n=sc.nextInt();
-            int a[]= new int[n];
+            int[] a = new int[n];
             int min=Integer.MAX_VALUE;
             int max=Integer.MIN_VALUE;
             for(int i=0;i<n;i++)

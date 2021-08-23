@@ -9,7 +9,7 @@ public class C {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[]= new int[n];
+            int[] a = new int[n];
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextInt();
@@ -18,7 +18,7 @@ public class C {
             for(i=n-1;i>=0;i--)
             {
                 int  j=i+a[i];
-                ;int sum=0;
+                int sum=0;
                 if (j<n)
                 {
                     a[i]=a[i]+a[j];

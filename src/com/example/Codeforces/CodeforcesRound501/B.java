@@ -9,9 +9,9 @@ public class B {
         Scanner sc= new Scanner(System.in);
         int n=sc.nextInt();
         int x=sc.nextInt();
-        int a[]= new int[n];
-        int b[]=new int[n];
-        Integer c[]=new Integer[n];
+        int[] a = new int[n];
+        int[] b =new int[n];
+        Integer[] c =new Integer[n];
         long sum_a=0;
 
         long sum_b=0;

@@ -12,7 +12,7 @@ class CACHEHIT {
             int n=sc.nextInt();
             int b=sc.nextInt();
             int m=sc.nextInt();
-            int a[] = new int[m];
+            int[] a = new int[m];
             for(int i=0;i<m;i++)
             {
                 a[i]=sc.nextInt();

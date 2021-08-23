@@ -10,8 +10,8 @@ public class B {
             int a = sc.nextInt();
             int b = sc.nextInt();
             int n = sc.nextInt();
-            int attack[] = new int[n];
-            int health[] = new int[n];
+            int[] attack = new int[n];
+            int[] health = new int[n];
             for (int i = 0; i < n; i++) {
                 attack[i] = sc.nextInt();
             }

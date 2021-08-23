@@ -9,8 +9,8 @@ public class FROGS {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[]=new int[n];
-            int l[]=new int[n];
+            int[] a =new int[n];
+            int[] l =new int[n];
 
             for(int i=0;i<n;i++)
             {

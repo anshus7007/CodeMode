@@ -8,7 +8,7 @@ public class B {
         int n=sc.nextInt();
         int q=sc.nextInt();
         String s=sc.next();
-        int a[]=new int[n];
+        int[] a =new int[n];
         for(int i=0;i<n;i++)
         {
             char ch=s.charAt(i);

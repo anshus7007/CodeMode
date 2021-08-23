@@ -11,7 +11,7 @@ public class C {
         while (t-->0)
         {
             int n=sc.nextInt();
-            long a[]= new long[n];
+            long[] a = new long[n];
 
             for(int i=0;i<n;i++)
             {

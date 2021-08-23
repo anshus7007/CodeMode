@@ -84,7 +84,7 @@ public class B {
 //
 //            }
 
-            int k[]=new int[m];
+            int[] k =new int[m];
             if(flag==0)
             {
                 System.out.println("YES");

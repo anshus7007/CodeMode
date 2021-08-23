@@ -3,10 +3,10 @@ package com.example;
 class GFG
 {
 
-    static void findWaitingTime(int processes[], int n,
-                                int bt[], int wt[], int quantum)
+    static void findWaitingTime(int[] processes, int n,
+                                int[] bt, int[] wt, int quantum)
     {
-        int rem_bt[] = new int[n];
+        int[] rem_bt = new int[n];
         for (int i = 0 ; i < n ; i++)
             rem_bt[i] =  bt[i];
 
@@ -42,18 +42,19 @@ class GFG
         }
     }
 
-    static void findTurnAroundTime(int processes[], int n,
-                                   int bt[], int wt[], int tat[])
+    static void findTurnAroundTime(int[] processes, int n,
+                                   int[] bt, int[] wt, int[] tat)
     {
 
         for (int i = 0; i < n ; i++)
             tat[i] = bt[i] + wt[i];
     }
 
-    static void findavgTime(int processes[], int n, int bt[],
+    static void findavgTime(int[] processes, int n, int[] bt,
                             int quantum)
     {
-        int wt[] = new int[n], tat[] = new int[n];
+        int[] wt = new int[n];
+        int[] tat = new int[n];
         int total_wt = 0, total_tat = 0;
 
         findWaitingTime(processes, n, bt, wt, quantum);
@@ -78,10 +79,10 @@ class GFG
 
     public static void main(String[] args)
     {
-        int processes[] = { 1, 2, 3};
+        int[] processes = { 1, 2, 3};
         int n = processes.length;
 
-        int burst_time[] = {10, 5, 8};
+        int[] burst_time = {10, 5, 8};
 
         int quantum = 1;
         findavgTime(processes, n, burst_time, quantum);

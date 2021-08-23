@@ -8,7 +8,7 @@ import java.util.Scanner;
         int n=sc.nextInt();
         int h=sc.nextInt();
         int x=sc.nextInt();
-        int a[]= new int[n];
+        int[] a = new int[n];
         for(int i=0;i<n;i++)
         {
             a[i]=sc.nextInt();

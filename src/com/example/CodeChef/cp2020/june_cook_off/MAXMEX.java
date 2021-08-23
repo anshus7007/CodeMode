@@ -10,7 +10,7 @@ class MAXMEX {
         {
             int n=ob.nextInt();
             int m=ob.nextInt();
-            int a[]=new int[n];
+            int[] a =new int[n];
             for(int i=0;i<n;i++)
             {
                 a[i]=ob.nextInt();

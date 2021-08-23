@@ -13,8 +13,8 @@ class FFL {
         {
             int n=sc.nextInt();
             int s=sc.nextInt();
-            int price[] = new int[n];
-            int players[] = new int[n];
+            int[] price = new int[n];
+            int[] players = new int[n];
             for(int i=0;i<n;i++)
             {
                 price[i]=sc.nextInt();

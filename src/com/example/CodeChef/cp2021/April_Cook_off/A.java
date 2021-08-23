@@ -12,8 +12,8 @@ import java.util.Set;
         {
             int n=sc.nextInt();
             int r=sc.nextInt();
-            long a[]=new long[n];
-            long b[]=new long[n];
+            long[] a =new long[n];
+            long[] b =new long[n];
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextLong();

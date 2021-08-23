@@ -14,8 +14,8 @@ public class FAIRELCT
         {
             int n=sc.nextInt();
             int m=sc.nextInt();
-            int a[]=new int[n];
-            Integer b[]= new Integer[m];
+            int[] a =new int[n];
+            Integer[] b = new Integer[m];
             long sumOfA=0;long sumOfB=0;
             for(int i=0;i<n;i++)
             {

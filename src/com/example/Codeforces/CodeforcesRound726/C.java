@@ -14,8 +14,8 @@ public class C {
         while (t-->0)
         {
             int n=sc.nextInt();
-            Integer a[]= new Integer[n];
-            int b[]= new int[n];
+            Integer[] a = new Integer[n];
+            int[] b = new int[n];
 
             for(int i=0;i<n;i++)
             {

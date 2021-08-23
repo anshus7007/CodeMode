@@ -16,7 +16,7 @@ public class C
             int n=sc.nextInt();
             long l=sc.nextLong();
             long r=sc.nextLong();
-            Long a[]= new Long[n];
+            Long[] a = new Long[n];
             for(int i=0;i<n;i++)
             {
                 a[i]=sc.nextLong();

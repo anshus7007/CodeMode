@@ -10,7 +10,7 @@ public class C {
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
         int s=sc.nextInt();
-        int a[]= new int[s];
+        int[] a = new int[s];
         Set<Integer> set= new HashSet<>();
         for(int i=0;i<s;i++)
         {

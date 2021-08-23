@@ -10,7 +10,7 @@ public class ORTHODOX {
         while (t-- > 0)
         {
             int n=sc.nextInt();
-            long a[]=new long[n];
+            long[] a =new long[n];
             HashMap<Long,Integer> map= new HashMap<>();
             int even=0;int odd=0;
             for(int i=0;i<n;i++)

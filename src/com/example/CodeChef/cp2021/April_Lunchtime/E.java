@@ -14,7 +14,7 @@ class E
             int n = sc.nextInt();
             int w = sc.nextInt();
             long add = sc.nextLong();
-            long a[] = new long[n];
+            long[] a = new long[n];
             HashMap<Long, Integer> map = new HashMap<>();
             for (int i = 0; i < n; i++) {
                 a[i] = sc.nextLong();

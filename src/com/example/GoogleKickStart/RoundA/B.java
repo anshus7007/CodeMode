@@ -10,7 +10,7 @@ class Solution {
         {
             int n=sc.nextInt();
             int m=sc.nextInt();
-            int a[][]=new int[n][m];
+            int[][] a =new int[n][m];
             for(int i=0;i<n;i++)
             {
                 for(int j=0;j<m;j++)
@@ -18,8 +18,8 @@ class Solution {
                     a[i][j]=sc.nextInt();
                 }
             }
-            int down[][]=new int[n][m];
-            int right[][]=new int[n][n];
+            int[][] down =new int[n][m];
+            int[][] right =new int[n][n];
             for(int i=0;i<m;i++)
             {
                 for(int j=0;j<n;j++)

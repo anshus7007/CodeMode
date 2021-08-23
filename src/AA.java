@@ -8,7 +8,7 @@ public class AA {
         c=sc.nextInt();
         n=sc.nextInt();
 
-        String s[]=new String[r];
+        String[] s =new String[r];
         for(int i=0;i<r;i++)
         {
 
@@ -16,7 +16,7 @@ public class AA {
 
 
         }
-        char a[][]=new char[r][c];
+        char[][] a =new char[r][c];
         for(int i=0;i<r;i++)
         {
             for(int j=0;j<s[i].length();j++)

@@ -9,7 +9,7 @@ public class AddNeighbours {
         while (t-->0)
         {
             int n=sc.nextInt();
-            int a[] = new int[n];
+            int[] a = new int[n];
             int p=0,max=Integer.MIN_VALUE;
             for(int i=0;i<n;i++)
             {

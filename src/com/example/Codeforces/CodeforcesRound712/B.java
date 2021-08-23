@@ -12,8 +12,8 @@ public class B {
             String a=sc.next();
             String b=sc.next();
 
-            int zeros[]=new int[n];
-            int one[]=new int[n];
+            int[] zeros =new int[n];
+            int[] one =new int[n];
             if(a.charAt(0)=='0') {
                 zeros[0] = 1;
                 one[0]=0;
